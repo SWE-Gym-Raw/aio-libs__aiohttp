@@ -32,7 +32,7 @@ jobs:
     timeout-minutes: 5
     steps:
     - name: Checkout
-      uses: actions/checkout@v2.4.0
+      uses: actions/checkout@v4.2.2
       with:
         submodules: true
     - name: Setup Python 3.8
@@ -88,7 +88,7 @@ jobs:
     timeout-minutes: 5
     steps:
     - name: Checkout
-      uses: actions/checkout@v2.4.0
+      uses: actions/checkout@v4.2.2
       with:
         submodules: true
     - name: Cache llhttp generated files
@@ -153,7 +153,7 @@ jobs:
     continue-on-error: ${{ matrix.experimental }}
     steps:
     - name: Checkout
-      uses: actions/checkout@v2.4.0
+      uses: actions/checkout@v4.2.2
       with:
         submodules: true
     - name: Setup Python ${{ matrix.pyver }}
@@ -256,7 +256,7 @@ jobs:
     needs: pre-deploy
     steps:
     - name: Checkout
-      uses: actions/checkout@v2.4.0
+      uses: actions/checkout@v4.2.2
       with:
         submodules: true
     - name: Setup Python
@@ -302,7 +302,7 @@ jobs:
           qemu: s390x
     steps:
     - name: Checkout
-      uses: actions/checkout@v2.4.0
+      uses: actions/checkout@v4.2.2
       with:
         submodules: true
     - name: Set up QEMU
@@ -361,7 +361,7 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v2.4.0
+      uses: actions/checkout@v4.2.2
       with:
         submodules: true
     - name: Update pip, wheel, setuptools, build, twine
